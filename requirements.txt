@@ -1,0 +1,12 @@
+# SDK Т-Инвестиций лежит не на обычном PyPI, а у банка.
+# сертификат у их сервера от российского УЦ, pip ему по умолчанию не верит,
+# поэтому trusted-host. если сертификат Минцифры стоит в системе - строку можно убрать
+--extra-index-url https://opensource.tbank.ru/api/v4/projects/238/packages/pypi/simple
+--trusted-host opensource.tbank.ru
+
+t-tech-investments==1.51.0
+PySide6==6.11.2
+keyring==25.7.0
+
+# для тестов
+pytest==9.1.1
